@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { FiSend } from "react-icons/fi";
+import { BsEmojiLaughing } from "react-icons/bs";
 import Message from "./Message";
 import MessageHead from "./MessageHead";
 
@@ -21,9 +22,10 @@ const MessageView: FC<MessageViewProps> = ({}) => {
         <input
           type="text"
           placeholder="Type a message here"
-          className="border border-dark-grey-border rounded-lg p-2 w-full dark:bg-dark-grey-input"
+          className="border border-dark-grey-border rounded-lg p-4 w-full dark:bg-dark-grey-input"
         />
-        <FiSend className="absolute mr-2 w-10" />
+        <BsEmojiLaughing className="absolute mr-2 w-10 right-10 text-xl cursor-pointer" />
+        <FiSend className="absolute mr-2 w-10 text-xl cursor-pointer" />
       </div>
     </div>
   );
