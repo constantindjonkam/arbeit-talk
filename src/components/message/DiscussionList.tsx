@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { BsArchive } from "react-icons/bs";
+import AnimatedButton from "../common/buttons/AnimatedButton";
 import Discussion from "./Discussion";
 
 interface DiscussionListProps {}
@@ -21,10 +22,10 @@ const DiscussionList: FC<DiscussionListProps> = ({}) => {
     <div className="h-full overflow-y-auto py-4 px-2 flex-[0.2] bg-light-grey-bg dark:bg-dark-grey-bg">
       <div className="flex items-center justify-between mb-4">
         <p className="font-bold">Messages</p>
-        <div className="flex items-center gap-2">
+        <AnimatedButton>
           <BsArchive />
           <p className="text-sm text-dark-grey">Archive Chats</p>
-        </div>
+        </AnimatedButton>
       </div>
       {messages.map((message, index) => (
         <Discussion key={index} message={message} online={true} />
