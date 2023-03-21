@@ -24,10 +24,11 @@ const MessageHead: FC<MessageHeadProps> = ({ name, online }) => {
           </p>
         </div>
       </div>
+
       <div className="flex gap-6 items-center">
-        <BiSearch className="text-2xl" />
-        <BiVideo className="text-2xl" />
-        <BiPhone className="text-2xl" />
+        <BiSearch className="text-2xl cursor-pointer" />
+        <BiVideo className="text-2xl cursor-pointer" />
+        <BiPhone className="text-2xl cursor-pointer" />
       </div>
     </div>
   );
