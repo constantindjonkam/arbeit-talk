@@ -7,7 +7,7 @@ interface HeaderProps {}
 const Header: FC<HeaderProps> = ({}) => {
   return (
     <div className="flex items-center justify-between bg-light-grey-bg dark:bg-dark-grey-bg px-8">
-      <div className="flex items-center gap-x-14 border-r-dark-grey-border border-r-[1px] py-2 pr-4">
+      <div className="flex items-center gap-x-14 border-r-gray-700 border-r-[1px] py-2 pr-4">
         <div className="flex items-center gap-x-4">
           <img
             className="rounded-full w-10 h-10"
@@ -33,7 +33,7 @@ const Header: FC<HeaderProps> = ({}) => {
         <BiSearch className="absolute mr-2 w-10" />
       </div>
 
-      <h4 className="text-primary">Arbeit Talk</h4>
+      <h4 className="text-primary"></h4>
     </div>
   );
 };
